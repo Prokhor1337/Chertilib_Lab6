@@ -1,0 +1,19 @@
+#include <iostream>
+#include <windows.h>
+
+using namespace std;
+
+int main() {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    char s = 'a';
+    char* ptr = &s;
+
+    cout << "Початкове значення: " << s << endl;
+
+    *ptr = 'b';
+
+    cout << "Після зміни: " << s << endl;
+
+    return 0;
+}
